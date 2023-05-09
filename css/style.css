@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    background-color: #eeeeee;
+  }
+  
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .top {
+    height: 50%;
+    background: linear-gradient(0deg, #49b2b5, #4fca5c);
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  }
+  
+  .bottom {
+    height: 50%;
+    background-color: #eeeeee;
+  }
+  
+  .curve {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200%;
+    height: 20px;
+    background-color: #49b2b5;
+    border-radius: 0 0 50% 50%/0 0 50px 50px; /* la curva è a forma di V rovesciata e arrotondata */
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-bar input[type="text"] {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0 10px;
+  }
+  
+  .iconify-icon {
+    margin-right: 5%;
+    color: #555;
+  }
+
+  .icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 120px;
+  }
+  
+  .icons-container .iconify-icon {
+    font-size: 24px;
+    color: #999;
+    margin: 0 10px;
+  }
