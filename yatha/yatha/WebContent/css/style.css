@@ -1,0 +1,171 @@
+.hamb{
+	visibility:hidden;
+}
+#navbar{
+  box-sizing:border-box;
+  margin:0px;
+  background-color: #ec8d93;
+  padding:20px;
+  height:160px;
+  
+}
+
+.logo {
+display:block;
+  float:left;
+  width:19%; /* The width is 20%, by default */
+}
+
+.cat {
+
+  float:left;
+  width:19%; /* The width is 60%, by default */
+}
+
+.Reg{
+
+  float:left;
+  width:19%; /* The width is 20%, by default */
+}
+.contenitore-login {
+
+  float:left;
+  width:19%; /* The width is 20%, by default */
+}
+.cart {
+  float:left;
+  width:19%; /* The width is 20%, by default */
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .logo{
+  width:70%;
+  display:block;
+  } .cat, #Reg, .contenitore-login, #logout, .cart ,#admin, #cat1,#cat2,#cat3{
+    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+  	display:block;
+  	float:right;
+  } .hamb{
+  	visibility:visible;
+  } 
+  
+
+}
+
+
+
+#prodotti{
+	grid-template-columns:28% 28% 28%;
+	grid-column-gap:5%;
+	justify-content: center;
+	}
+li p{
+	display:block;
+	margin:20px;
+	
+}
+
+	.prodotto img{
+	width:65%;
+	height:auto;
+	}
+	li{
+		display:inline;
+		max-widht:30%;
+	}
+	.listitem{
+	display:inline-block;
+	width:28%;
+	margin:30px;
+	}
+   .prodotto{
+   	max-widht:100%;
+	
+   }
+   .prodotto img{
+	max-width:100%;	
+	}
+	
+
+
+body {font-family: Verdana, sans-serif;
+	background-color:antiquewhite;
+	margin:0px;
+	}
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#carrello{
+	float:left;
+	padding:50px;
+}
+#hidden{
+	
+	position:fixed;
+}
